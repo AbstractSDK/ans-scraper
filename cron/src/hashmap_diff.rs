@@ -6,7 +6,7 @@ use std::{collections::HashSet, hash::Hash};
 pub fn diff<K, V>(
     scraped_entries: HashMap<K, V>,
     on_chain_entries: HashMap<K, V>,
-    remove_outdated: bool,
+    remove_on_overwrite: bool,
 ) -> Result<(HashSet<K>, HashMap<K, V>), AbstractInterfaceError>
 where
     K: Eq + Hash + Clone + Debug,
@@ -17,7 +17,7 @@ where
         &union_keys,
         &scraped_entries,
         &on_chain_entries,
-        remove_outdated,
+        remove_on_overwrite,
     ))
 }
 
@@ -39,7 +39,7 @@ fn get_changes<K, V>(
     union_keys: &Vec<&K>,
     scraped_entries: &HashMap<K, V>,
     on_chain_entries: &HashMap<K, V>,
-    remove_stale: bool,
+    remove_on_overwrite: bool,
 ) -> (HashSet<K>, HashMap<K, V>)
 where
     K: Eq + Hash + Clone + Debug,
@@ -63,7 +63,7 @@ where
                 log::info!("{:?} - {:?}", val_scraped, val_on_chain);
                 log::info!("entry : {:?}", entry);
                 to_add.insert((*entry).to_owned(), val_scraped.clone());
-                if remove_stale {
+                if remove_on_overwrite {
                     to_remove.insert((*entry).clone());
                 }
             }
