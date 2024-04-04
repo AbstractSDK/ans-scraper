@@ -91,12 +91,28 @@ export class AstroportGql extends Exchange {
   }
 
   private async fetchGraphql(network: Network): Promise<AstroportPoolsQueryResponse> {
-    let pools: AstroportPoolsQueryResponse
-    // check manual override
-    if (ASTROPORT_POOLS[network.networkId as keyof typeof ASTROPORT_POOLS]) {
-      pools = { pools: ASTROPORT_POOLS[network.networkId as keyof typeof ASTROPORT_POOLS] }
-    } else {
-      const { data } = await fetch(this.options.graphQlEndpoint, {
+    let pools: AstroportPoolsQueryResponse['pools']
+    // check for the pool list
+    if (this.options.poolListUrl) {
+      console.log(`Fetching pools from ${this.options.poolListUrl}`)
+      pools = await wretch(this.options.poolListUrl)
+        .get()
+        .json<{ result: { data: { json: AstroportPool[] } } }>()
+        .then(
+          ({
+            result: {
+              data: { json: pools },
+            },
+          }) => pools
+        )
+    }
+    // then check for manual overrides
+    else if (ASTROPORT_POOLS[network.networkId as keyof typeof ASTROPORT_POOLS]) {
+      pools = ASTROPORT_POOLS[network.networkId as keyof typeof ASTROPORT_POOLS]
+    }
+    // finally, try the graphql endpoint (which doesn't work because we don't have an API key)
+    else {
+      pools = await wretch(this.options.graphQlEndpoint, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -108,12 +124,14 @@ export class AstroportGql extends Exchange {
             chains: [network.networkId],
           },
         }),
-      }).then((r) => r.json())
-
-      pools = data
+      })
+        .get()
+        .json<{ data: AstroportPoolsQueryResponse }>()
+        .then(({ data: { pools } }) => pools)
     }
 
-    const sortedPools = pools.pools
+    // Sort the pools by their liquidity
+    const sortedPools = pools
       .sort((a, b) => {
         return a.poolLiquidityUsd > b.poolLiquidityUsd ? -1 : 1
       })
