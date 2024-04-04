@@ -153,7 +153,11 @@ export abstract class Network {
 
     // factory/kujira19kxd9sqk09zlzqfykk7tzyf70hl009hkekufq8q0ud90ejtqvvxs8xg5cq/uhans
     // TODO: this will retrieve "uhans" for example
-    const symbol = metadata.symbol ? metadata.symbol : denom.split('/')[2]
+    const splitDenom = denom.split('/')
+    if (splitDenom.length > 3) {
+      throw new Error(`Denom ${denom} has more than 3 parts! Skipping`)
+    }
+    const symbol = metadata.symbol ? metadata.symbol : splitDenom[2]
 
     // Pause before executing a new query
     await new Promise((resolve) => setTimeout(resolve, 500))

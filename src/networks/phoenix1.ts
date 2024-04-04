@@ -34,6 +34,10 @@ export class Phoenix1 extends Network {
             'https://raw.githubusercontent.com/astroport-fi/astroport-changelog/main/terra-2/phoenix-1/core_phoenix.json',
           cacheSuffix: PHOENIX_1,
           graphQlEndpoint: 'https://multichain-api.astroport.fi/graphql',
+          tokenListUrl:
+            'https://raw.githubusercontent.com/astroport-fi/astroport-token-lists/main/tokenLists/terra2.json',
+          poolListUrl:
+            'https://app.astroport.fi/api/trpc/pools.getAll?input=%7B%22json%22%3A%7B%22chainId%22%3A%5B%22phoenix-1%22%5D%7D%7D',
         }),
       ],
     })

@@ -29,6 +29,10 @@ export class Pion1 extends Network {
             'https://raw.githubusercontent.com/astroport-fi/astroport-changelog/main/neutron/pion-1/core_testnet.json',
           cacheSuffix: PION_1,
           graphQlEndpoint: 'https://multichain-api.astroport.fi/graphql',
+          tokenListUrl:
+            'https://raw.githubusercontent.com/astroport-fi/astroport-token-lists/main/tokenLists/testnets/neutron.json',
+          poolListUrl:
+            'https://app.astroport.fi/api/trpc/pools.getAll?input=%7B%22json%22%3A%7B%22chainId%22%3A%5B%22pion-1%22%5D%7D%7D',
         }),
       ],
     })
