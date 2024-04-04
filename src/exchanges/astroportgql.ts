@@ -36,9 +36,11 @@ interface AstroportOptions {
     astro_token_address?: string
     incentives_address?: string
   }
+  tokenListUrl?: string
+  poolListUrl?: string
 }
 
-const MAX_POOLS = 25
+const MAX_POOLS = 35
 
 /**
  * Astroport scraper.
@@ -158,14 +160,12 @@ export class AstroportGql extends Exchange {
         return
       }
 
-      const poolMetadata = this.poolMetadata(poolType, assetNames)
-      if (poolMetadata.pool_type === 'ConcentratedLiquidity') {
-        console.log(
-          'Skipping pool because Concentrated Liquiditiy!! TODO: REmove AFTER 0.20',
-          poolMetadata
-        )
+      if (poolType === 'transmuter') {
+        console.log(`Skipping transmuter pool for ${assetNames}`)
         return
       }
+
+      const poolMetadata = this.poolMetadata(poolType, assetNames)
 
       network.poolRegistry.register(new AnsPoolEntry(PoolId.contract(poolAddress), poolMetadata))
 

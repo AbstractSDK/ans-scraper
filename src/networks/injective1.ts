@@ -29,6 +29,10 @@ export class Injective1 extends Network {
             'https://raw.githubusercontent.com/astroport-fi/astroport-changelog/main/injective/injective-1/core_mainnet.json',
           cacheSuffix: INJECTIVE_1,
           graphQlEndpoint: 'https://multichain-api.astroport.fi/graphql',
+          tokenListUrl:
+            'https://raw.githubusercontent.com/astroport-fi/astroport-token-lists/main/tokenLists/injective.json',
+          poolListUrl:
+            'https://app.astroport.fi/api/trpc/pools.getAll?input=%7B%22json%22%3A%7B%22chainId%22%3A%5B%22injective-1%22%5D%7D%7D',
         }),
       ],
     })

@@ -64,6 +64,30 @@ const mainnet = new Neutron1(
           native: 'factory/neutron1t5qrjtyryh8gzt800qr5vylhh2f8cmx4wmz9mc/ugoddard',
         },
       ],
+      [
+        'stride>sttia',
+        {
+          native: 'ibc/6569E05DEE32B339D9286A52BE33DFCEFC97267F23EF9CFDE0C055140967A9A5',
+        },
+      ],
+      [
+        'stride>stdym',
+        {
+          native: 'ibc/8D0C1AC5A72FB7EC187632D01BACBB68EF743CA1AF16A15C00ACBB9CF49A0070',
+        },
+      ],
+      [
+        'dymension>dym',
+        {
+          native: 'ibc/4A6A46D4263F2ED3DCE9CF866FE15E6903FB5E12D87EB8BDC1B6B1A1E2D397B4',
+        },
+      ],
+      [
+        'kujira>mnta',
+        {
+          native: 'ibc/83794D4DD229BCBA72347244EE5FC4594880FF236F9A0A98680D10954DE9641C',
+        },
+      ],
     ]),
   }),
   new ContractRegistry(),
