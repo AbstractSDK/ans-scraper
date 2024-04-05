@@ -26,7 +26,7 @@ interface AstroportOptions {
 const ALL_PAIRS_CACHE_KEY = 'allPairs'
 const TOP_PAIRS_CACHE_KEY = 'topPairs'
 
-const TOP_PAIR_COUNT = 50
+const TOP_PAIR_COUNT = 30
 
 /**
  * Astroport scraper.
@@ -45,7 +45,11 @@ export class Astroport extends Exchange {
   async registerAssets(network: Network) {
     // TODO: check if not cw20
     const { astro_token_address } = await this.retrieveAstroContracts()
-    await network.registerCw20Asset(astro_token_address)
+    if (AssetInfo.isIbcDenom(astro_token_address)) {
+      await network.registerNativeAsset({ denom: astro_token_address })
+    } else {
+      await network.registerCw20Asset(astro_token_address)
+    }
     const assets = await this.fetchTopAssets(network)
 
     for (const assetInfo of assets) {
@@ -126,11 +130,11 @@ export class Astroport extends Exchange {
   async registerPools(network: Network) {
     const astroContracts = await this.retrieveAstroContracts()
 
-    if (!astroContracts.generator_address) {
+    if (!astroContracts.incentives_address) {
       throw new Error('Could not find generator address')
     }
 
-    const { generator_address: stakingAddress } = astroContracts
+    const { incentives_address: stakingAddress } = astroContracts
 
     const pairs = await this.fetchTopPairs(network)
 
@@ -201,11 +205,11 @@ export class Astroport extends Exchange {
   async registerContracts(network: Network) {
     // const astroContracts = await this.retrieveAstroContracts()
     //
-    // if (!astroContracts.generator_address) {
+    // if (!astroContracts.incentives_address) {
     //   throw new Error('Could not find generator address')
     // }
     //
-    // const { generator_address: stakingAddress } = astroContracts
+    // const { incentives_address: stakingAddress } = astroContracts
     //
     // const { pools } = await this.fetchPoolList(network)
     //
@@ -237,7 +241,7 @@ export class Astroport extends Exchange {
   }
 
   private async retrieveAstroContracts(): Promise<{
-    generator_address: string
+    incentives_address: string
     factory_address: string
     astro_token_address: string
     [k: string]: string
@@ -282,7 +286,7 @@ export class Astroport extends Exchange {
       let pairs = []
       try {
         // @ts-ignore
-        const { pairs: pairsR } = await factoryQClient.pairs({ limit: 30, startAfter })
+        const { pairs: pairsR } = await factoryQClient.pairs({ limit: 20, startAfter })
         pairs = pairsR
       } catch (e) {
         console.error(e)

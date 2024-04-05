@@ -29,6 +29,10 @@ export class Neutron1 extends Network {
             'https://raw.githubusercontent.com/astroport-fi/astroport-changelog/main/neutron/neutron-1/core_mainnet.json',
           cacheSuffix: NEUTRON_1,
           graphQlEndpoint: 'https://multichain-api.astroport.fi/graphql',
+          tokenListUrl:
+            'https://raw.githubusercontent.com/astroport-fi/astroport-token-lists/main/tokenLists/neutron.json',
+          poolListUrl:
+            'https://app.astroport.fi/api/trpc/pools.getAll?input=%7B%22json%22%3A%7B%22chainId%22%3A%5B%22neutron-1%22%5D%7D%7D',
         }),
       ],
     })

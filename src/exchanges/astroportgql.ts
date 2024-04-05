@@ -7,6 +7,7 @@ import { Network } from '../networks/network'
 import { match, P } from 'ts-pattern'
 import { AssetInfo as AstroportAssetInfo } from '../clients/astroport/AstroportFactory.types'
 import LocalCache from '../helpers/LocalCache'
+import { ASTROPORT_POOLS } from './astroportResponses'
 
 const ASTROPORT = 'Astroport'
 
@@ -33,9 +34,13 @@ interface AstroportOptions {
   graphQlEndpoint: string
   astroContractsOverrides?: {
     astro_token_address?: string
-    generator_address?: string
+    incentives_address?: string
   }
+  tokenListUrl?: string
+  poolListUrl?: string
 }
+
+const MAX_POOLS = 35
 
 /**
  * Astroport scraper.
@@ -86,21 +91,55 @@ export class AstroportGql extends Exchange {
   }
 
   private async fetchGraphql(network: Network): Promise<AstroportPoolsQueryResponse> {
-    const { data } = await fetch(this.options.graphQlEndpoint, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-      },
-      body: JSON.stringify({
-        query: GRAPHQL_QUERY,
-        variables: {
-          chains: [network.networkId],
+    let pools: AstroportPoolsQueryResponse['pools']
+    // check for the pool list
+    if (this.options.poolListUrl) {
+      console.log(`Fetching pools from ${this.options.poolListUrl}`)
+      pools = await wretch(this.options.poolListUrl)
+        .get()
+        .json<{ result: { data: { json: AstroportPool[] } } }>()
+        .then(
+          ({
+            result: {
+              data: { json: pools },
+            },
+          }) => pools
+        )
+    }
+    // then check for manual overrides
+    else if (ASTROPORT_POOLS[network.networkId as keyof typeof ASTROPORT_POOLS]) {
+      pools = ASTROPORT_POOLS[network.networkId as keyof typeof ASTROPORT_POOLS]
+    }
+    // finally, try the graphql endpoint (which doesn't work because we don't have an API key)
+    else {
+      pools = await wretch(this.options.graphQlEndpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
         },
-      }),
-    }).then((r) => r.json())
+        body: JSON.stringify({
+          query: GRAPHQL_QUERY,
+          variables: {
+            chains: [network.networkId],
+          },
+        }),
+      })
+        .get()
+        .json<{ data: AstroportPoolsQueryResponse }>()
+        .then(({ data: { pools } }) => pools)
+    }
 
-    return data
+    // Sort the pools by their liquidity
+    const sortedPools = pools
+      .sort((a, b) => {
+        return a.poolLiquidityUsd > b.poolLiquidityUsd ? -1 : 1
+      })
+      .slice(0, MAX_POOLS)
+
+    return {
+      pools: sortedPools,
+    }
   }
 
   private astroportInfoToAssetInfo(assetInfo: AstroportAssetInfo) {
@@ -113,11 +152,11 @@ export class AstroportGql extends Exchange {
   async registerPools(network: Network) {
     const astroContracts = await this.retrieveAstroContracts()
 
-    if (!astroContracts.generator_address) {
+    if (!astroContracts.incentives_address) {
       throw new Error('Could not find generator address')
     }
 
-    const { generator_address: stakingAddress } = astroContracts
+    const { incentives_address: stakingAddress } = astroContracts
 
     const { pools } = await this.fetchGraphql(network)
 
@@ -136,6 +175,11 @@ export class AstroportGql extends Exchange {
           // }
         }
         console.error(`Could not resolve assets for pool with addr ${poolAddress}`)
+        return
+      }
+
+      if (poolType === 'transmuter') {
+        console.log(`Skipping transmuter pool for ${assetNames}`)
         return
       }
 
@@ -159,7 +203,7 @@ export class AstroportGql extends Exchange {
   async registerContracts(network: Network) {}
 
   private async retrieveAstroContracts(): Promise<{
-    generator_address: string
+    incentives_address: string
     factory_address: string
     astro_token_address: string
     [k: string]: string
@@ -180,11 +224,12 @@ export class AstroportGql extends Exchange {
   toAbstractPoolType(poolType: string): PoolType {
     return match(poolType)
       .with('xyk', () => 'ConstantProduct' as const)
+      .with('astroport-pair-xyk-sale-tax', () => 'ConstantProduct' as const)
       .with('stable', () => 'Stable' as const)
-      .with('concentrated', () => 'Weighted' as const)
+      .with('concentrated', () => 'ConcentratedLiquidity' as const)
       .otherwise((c) => {
         return match(c)
-          .with('concentrated', () => 'Weighted' as const)
+          .with('concentrated', () => 'ConcentratedLiquidity' as const)
           .otherwise(() => {
             throw new Error(`Unknown custom type: ${JSON.stringify(c)}`)
           })
@@ -195,7 +240,7 @@ export class AstroportGql extends Exchange {
     return {
       dex: this.name.toLowerCase(),
       pool_type: this.toAbstractPoolType(pairType),
-      assets,
+      assets: assets.sort(),
     }
   }
 }
@@ -210,6 +255,7 @@ interface AstroportPool {
   lpAddress: string
   poolAddress: string
   stakeable: boolean
+  poolLiquidityUsd: number
 }
 
 interface PoolAsset {
