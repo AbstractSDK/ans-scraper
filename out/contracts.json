@@ -1116,6 +1116,13 @@
     "constantine-3": [
       [
         {
+          "protocol": "archid",
+          "contract": "registry"
+        },
+        "archway1lr8rstt40s697hqpedv2nvt27f4cuccqwvly9gnvuszxmcevrlns60xw4r"
+      ],
+      [
+        {
           "protocol": "astrovault",
           "contract": "staking/astrovault/archway>const,archway>xconst"
         },
