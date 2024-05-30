@@ -3,8 +3,176 @@
     "harpoon-4": [
       [
         {
+          "protocol": "ghost",
+          "contract": "vault/kujira>kuji"
+        },
+        "kujira18txj8dep8n9cfgmhgshut05d9t4vjdphcd3dwl32vu4898w9uxnslaflur"
+      ],
+      [
+        {
+          "protocol": "ghost",
+          "contract": "market/kujira>kuji/kujira>usk"
+        },
+        "kujira193dzcmy7lwuj4eda3zpwwt9ejal00xva0vawcvhgsyyp5cfh6jyq66wfrf"
+      ],
+      [
+        {
           "protocol": "kujira",
           "contract": "staking/kujira/kujira>demo,kujira>kuji"
+        },
+        "kujira1e7hxytqdg6v05f8ev3wrfcm5ecu3qyhl7y4ga73z76yuufnlk2rqd4uwf4"
+      ],
+      [
+        {
+          "protocol": "kujira",
+          "contract": "staking/kujira/kujira>hans,kujira>usk"
+        },
+        "kujira1e7hxytqdg6v05f8ev3wrfcm5ecu3qyhl7y4ga73z76yuufnlk2rqd4uwf4"
+      ],
+      [
+        {
+          "protocol": "kujira",
+          "contract": "staking/kujira/kujira>kuji,kujira>usk"
+        },
+        "kujira1e7hxytqdg6v05f8ev3wrfcm5ecu3qyhl7y4ga73z76yuufnlk2rqd4uwf4"
+      ],
+      [
+        {
+          "protocol": "kujira",
+          "contract": "staking/kujira/kujira>demo,kujira>usk"
+        },
+        "kujira1e7hxytqdg6v05f8ev3wrfcm5ecu3qyhl7y4ga73z76yuufnlk2rqd4uwf4"
+      ],
+      [
+        {
+          "protocol": "kujira",
+          "contract": "staking/kujira/kujira>usk,kujira>usned4"
+        },
+        "kujira1e7hxytqdg6v05f8ev3wrfcm5ecu3qyhl7y4ga73z76yuufnlk2rqd4uwf4"
+      ],
+      [
+        {
+          "protocol": "kujira",
+          "contract": "staking/kujira/kujira>usk,kujira>usned"
+        },
+        "kujira1e7hxytqdg6v05f8ev3wrfcm5ecu3qyhl7y4ga73z76yuufnlk2rqd4uwf4"
+      ],
+      [
+        {
+          "protocol": "kujira",
+          "contract": "staking/kujira/axelar>wftm,kujira>uusk"
+        },
+        "kujira1e7hxytqdg6v05f8ev3wrfcm5ecu3qyhl7y4ga73z76yuufnlk2rqd4uwf4"
+      ],
+      [
+        {
+          "protocol": "kujira",
+          "contract": "staking/kujira/kujira>uaqrn,kujira>usk"
+        },
+        "kujira1e7hxytqdg6v05f8ev3wrfcm5ecu3qyhl7y4ga73z76yuufnlk2rqd4uwf4"
+      ],
+      [
+        {
+          "protocol": "kujira",
+          "contract": "staking/kujira/kujira>ucrqn,kujira>usk"
+        },
+        "kujira1e7hxytqdg6v05f8ev3wrfcm5ecu3qyhl7y4ga73z76yuufnlk2rqd4uwf4"
+      ],
+      [
+        {
+          "protocol": "kujira",
+          "contract": "staking/kujira/kujira>udrqn,kujira>usk"
+        },
+        "kujira1e7hxytqdg6v05f8ev3wrfcm5ecu3qyhl7y4ga73z76yuufnlk2rqd4uwf4"
+      ],
+      [
+        {
+          "protocol": "kujira",
+          "contract": "staking/kujira/kujira>uerqn,kujira>usk"
+        },
+        "kujira1e7hxytqdg6v05f8ev3wrfcm5ecu3qyhl7y4ga73z76yuufnlk2rqd4uwf4"
+      ],
+      [
+        {
+          "protocol": "kujira",
+          "contract": "staking/kujira/kujira>ufqrn,kujira>usk"
+        },
+        "kujira1e7hxytqdg6v05f8ev3wrfcm5ecu3qyhl7y4ga73z76yuufnlk2rqd4uwf4"
+      ],
+      [
+        {
+          "protocol": "kujira",
+          "contract": "staking/kujira/kujira>ugrqn,kujira>usk"
+        },
+        "kujira1e7hxytqdg6v05f8ev3wrfcm5ecu3qyhl7y4ga73z76yuufnlk2rqd4uwf4"
+      ],
+      [
+        {
+          "protocol": "kujira",
+          "contract": "staking/kujira/kujira>uhrqn,kujira>usk"
+        },
+        "kujira1e7hxytqdg6v05f8ev3wrfcm5ecu3qyhl7y4ga73z76yuufnlk2rqd4uwf4"
+      ],
+      [
+        {
+          "protocol": "kujira",
+          "contract": "staking/kujira/kujira>ufore,kujira>usk"
+        },
+        "kujira1e7hxytqdg6v05f8ev3wrfcm5ecu3qyhl7y4ga73z76yuufnlk2rqd4uwf4"
+      ],
+      [
+        {
+          "protocol": "kujira",
+          "contract": "staking/kujira/kujira>usk,kujira>uskin"
+        },
+        "kujira1e7hxytqdg6v05f8ev3wrfcm5ecu3qyhl7y4ga73z76yuufnlk2rqd4uwf4"
+      ],
+      [
+        {
+          "protocol": "kujira",
+          "contract": "staking/kujira/cosmoshub>atom,kujira>kuji"
+        },
+        "kujira1e7hxytqdg6v05f8ev3wrfcm5ecu3qyhl7y4ga73z76yuufnlk2rqd4uwf4"
+      ],
+      [
+        {
+          "protocol": "kujira",
+          "contract": "staking/kujira/cosmoshub>atom,kujira>usk"
+        },
+        "kujira1e7hxytqdg6v05f8ev3wrfcm5ecu3qyhl7y4ga73z76yuufnlk2rqd4uwf4"
+      ],
+      [
+        {
+          "protocol": "kujira",
+          "contract": "staking/kujira/kujira>kuji,kujira>uatom"
+        },
+        "kujira1e7hxytqdg6v05f8ev3wrfcm5ecu3qyhl7y4ga73z76yuufnlk2rqd4uwf4"
+      ],
+      [
+        {
+          "protocol": "kujira",
+          "contract": "staking/kujira/kujira>uatom,kujira>usk"
+        },
+        "kujira1e7hxytqdg6v05f8ev3wrfcm5ecu3qyhl7y4ga73z76yuufnlk2rqd4uwf4"
+      ],
+      [
+        {
+          "protocol": "kujira",
+          "contract": "staking/kujira/kujira>usend,kujira>usk"
+        },
+        "kujira1e7hxytqdg6v05f8ev3wrfcm5ecu3qyhl7y4ga73z76yuufnlk2rqd4uwf4"
+      ],
+      [
+        {
+          "protocol": "kujira",
+          "contract": "staking/kujira/kujira>usk,kujira>uwenmoon"
+        },
+        "kujira1e7hxytqdg6v05f8ev3wrfcm5ecu3qyhl7y4ga73z76yuufnlk2rqd4uwf4"
+      ],
+      [
+        {
+          "protocol": "kujira",
+          "contract": "staking/kujira/kujira>usk,kujira>uwagmi"
         },
         "kujira1e7hxytqdg6v05f8ev3wrfcm5ecu3qyhl7y4ga73z76yuufnlk2rqd4uwf4"
       ]
