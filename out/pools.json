@@ -16,6 +16,406 @@
             "kujira>kuji"
           ]
         }
+      ],
+      [
+        {
+          "separate_addresses": {
+            "swap": "kujira1xvjwl3qpp449shx49fpkl22pkyv3vdnq0juc8vhmemm322zp99yqlwrh0g",
+            "liquidity": "kujira15jfkm638zw3qlfmv5ekc7e0flp2fqsr7xyjjl990cx5xwqczl2psc5xp8x"
+          }
+        },
+        {
+          "dex": "kujira",
+          "pool_type": "ConstantProduct",
+          "assets": [
+            "kujira>hans",
+            "kujira>usk"
+          ]
+        }
+      ],
+      [
+        {
+          "separate_addresses": {
+            "swap": "kujira1wl003xxwqltxpg5pkre0rl605e406ktmq5gnv0ngyjamq69mc2kqm06ey6",
+            "liquidity": "kujira16ethwy4fkjn7ymd04ect2wwlq7pwtlxdzw3zg5nvw8smmwsks49sqjg326"
+          }
+        },
+        {
+          "dex": "kujira",
+          "pool_type": "ConstantProduct",
+          "assets": [
+            "kujira>kuji",
+            "kujira>usk"
+          ]
+        }
+      ],
+      [
+        {
+          "separate_addresses": {
+            "swap": "kujira14sa4u42n2a8kmlvj3qcergjhy6g9ps06rzeth94f2y6grlat6u6ssqzgtg",
+            "liquidity": "kujira1a9fha3f02xyzvmanxxl4p3djrnp40ewwkrfkm4gr0exlv028ze3slhv4fn"
+          }
+        },
+        {
+          "dex": "kujira",
+          "pool_type": "ConstantProduct",
+          "assets": [
+            "kujira>demo",
+            "kujira>usk"
+          ]
+        }
+      ],
+      [
+        {
+          "separate_addresses": {
+            "swap": "kujira1uqqwevgv7759munxucgpg7ee5kfsdmh0u8myymthzxaxq6e87rfq6ea5c9",
+            "liquidity": "kujira1j6fhnckujkjagg38zg04suvlzhplut87hnw0lytkf2vphh9pfcpsvwedza"
+          }
+        },
+        {
+          "dex": "kujira",
+          "pool_type": "ConstantProduct",
+          "assets": [
+            "kujira>usk",
+            "kujira>usned4"
+          ]
+        }
+      ],
+      [
+        {
+          "separate_addresses": {
+            "swap": "kujira1mmnzzw74va6vwxzsyuvaakq0pet3m42e4867yjwgmmrty6l4rl3s9l58d0",
+            "liquidity": "kujira128z4xqd0wug00w8sltp85yl2hyqdez8tqnrez233unl42axkkmts2r6ucn"
+          }
+        },
+        {
+          "dex": "kujira",
+          "pool_type": "ConstantProduct",
+          "assets": [
+            "kujira>usk",
+            "kujira>usned"
+          ]
+        }
+      ],
+      [
+        {
+          "separate_addresses": {
+            "swap": "kujira15uvw0wreepnw7gkkdrc8awan4eqyznzh8e3fcdcs2d5m62m7r2gs3694q4",
+            "liquidity": "kujira1vq5uz5d74jcazksm7f92n9fs6vl5cjakf2u93uyrpk6t2rrsqrasa9ksq9"
+          }
+        },
+        {
+          "dex": "kujira",
+          "pool_type": "ConstantProduct",
+          "assets": [
+            "axelar>wftm",
+            "kujira>uusk"
+          ]
+        }
+      ],
+      [
+        {
+          "separate_addresses": {
+            "swap": "kujira17ql805f36rkckjftza7zua7c29jtm65vjqdmnr3zjs3y02dhh94qqmmvct",
+            "liquidity": "kujira16x9fdr62yvs86a46gcnzkcfuruxamgtcag5732pcydag3scwv7sqn6awnw"
+          }
+        },
+        {
+          "dex": "kujira",
+          "pool_type": "ConstantProduct",
+          "assets": [
+            "kujira>usk",
+            "kujira>usned"
+          ]
+        }
+      ],
+      [
+        {
+          "separate_addresses": {
+            "swap": "kujira1jq9y0fdvjcemhp0dlwmgv2793de82ny7m4wjjsxzc3jt4px3xmustpycwq",
+            "liquidity": "kujira1220g9jpstjxfp3ld0wcj7c4ljq8r2t3j9fteuk3290u60f6878ns8sxq9g"
+          }
+        },
+        {
+          "dex": "kujira",
+          "pool_type": "ConstantProduct",
+          "assets": [
+            "kujira>uaqrn",
+            "kujira>usk"
+          ]
+        }
+      ],
+      [
+        {
+          "separate_addresses": {
+            "swap": "kujira12krsjzusfqetcd9d8h6gfatanhp5qpyffx84xzd68jc6uuzju62qa2ph0s",
+            "liquidity": "kujira1ve45zryy900n85hnyrp2908c3sn2fa53js2fjsy8m4spdtrvmztqdch96e"
+          }
+        },
+        {
+          "dex": "kujira",
+          "pool_type": "ConstantProduct",
+          "assets": [
+            "kujira>ucrqn",
+            "kujira>usk"
+          ]
+        }
+      ],
+      [
+        {
+          "separate_addresses": {
+            "swap": "kujira176tc74us3xw8va5wnke26uv7k98049xpnpqvy05a524np5gkz9gs7duwc6",
+            "liquidity": "kujira1c3nvccjdxy6vttg0ehpc5dr5fu2zq6932ea36lm9wfyhnzm3uyhqyztqv5"
+          }
+        },
+        {
+          "dex": "kujira",
+          "pool_type": "ConstantProduct",
+          "assets": [
+            "kujira>udrqn",
+            "kujira>usk"
+          ]
+        }
+      ],
+      [
+        {
+          "separate_addresses": {
+            "swap": "kujira1nyqxnd605s3rs5japc5apm7yklpcwnk8cjggflyq9nqf0mgvhwuq4cgkpr",
+            "liquidity": "kujira1mdksf4lescc5w9mwr6d7s2lypwys92pjhnscfwrmnyl35sctquds4z4vuf"
+          }
+        },
+        {
+          "dex": "kujira",
+          "pool_type": "ConstantProduct",
+          "assets": [
+            "kujira>uerqn",
+            "kujira>usk"
+          ]
+        }
+      ],
+      [
+        {
+          "separate_addresses": {
+            "swap": "kujira1s0mjv68ew78a2ctuh4aud55d9csw0gggefla4fs2xd39ulec5q4szx96ev",
+            "liquidity": "kujira1hg4zgpe22xwk08tzl8pqg5d0syktxlw53v83qeht7f2kmxrmsx3sevyzey"
+          }
+        },
+        {
+          "dex": "kujira",
+          "pool_type": "ConstantProduct",
+          "assets": [
+            "kujira>ufqrn",
+            "kujira>usk"
+          ]
+        }
+      ],
+      [
+        {
+          "separate_addresses": {
+            "swap": "kujira1ss3myspfztk7l7lp3w6ft9rz7u6emmhsgmr90u652a0ezytvmk9s00rt20",
+            "liquidity": "kujira1pflr58tlf22erz2qza08qy9lp2wzm2q725rw9ervy50el2rj96tqv700zj"
+          }
+        },
+        {
+          "dex": "kujira",
+          "pool_type": "ConstantProduct",
+          "assets": [
+            "kujira>ugrqn",
+            "kujira>usk"
+          ]
+        }
+      ],
+      [
+        {
+          "separate_addresses": {
+            "swap": "kujira1hyqjwgu30dhatnpmk8lwsycyxzm2xneulp3n5naz2uf6kz9zhkzqh53vye",
+            "liquidity": "kujira10c82wlmf3svtzwdlxj55zz6rpr5599vveegfczhejug7yezdufssp06tcv"
+          }
+        },
+        {
+          "dex": "kujira",
+          "pool_type": "ConstantProduct",
+          "assets": [
+            "kujira>uhrqn",
+            "kujira>usk"
+          ]
+        }
+      ],
+      [
+        {
+          "separate_addresses": {
+            "swap": "kujira1vwrcfdwm3flz4afzll744rhyvjgtcc8fhg2nzqyklqexc4z8jj5swekgvp",
+            "liquidity": "kujira1mj8e696gqf4udd85uffd95ct2vxur20kvfc9qxf0xx8n3532mm7qc0hp8g"
+          }
+        },
+        {
+          "dex": "kujira",
+          "pool_type": "ConstantProduct",
+          "assets": [
+            "kujira>ufore",
+            "kujira>usk"
+          ]
+        }
+      ],
+      [
+        {
+          "separate_addresses": {
+            "swap": "kujira1e62sh3dlkcfyaf29x94d9rzgvwpq589c2x5lhu0kmm4dff6lu3ws4rf0m2",
+            "liquidity": "kujira1n4xh80058pdhlmq9ylka2uz9eawdwzcg283828vt9y23sj5fjeksndqp5v"
+          }
+        },
+        {
+          "dex": "kujira",
+          "pool_type": "ConstantProduct",
+          "assets": [
+            "kujira>usk",
+            "kujira>uskin"
+          ]
+        }
+      ],
+      [
+        {
+          "separate_addresses": {
+            "swap": "kujira1k89f5el2fzk0y6vwrk3hym4a4dtkw6w6phye7u8p2nlctv5h2ngsk5vwsq",
+            "liquidity": "kujira17pydeklj9h9tsauhwnhzkl5vcvr6v0mceqwg6njx5skg53efudsqfwk46e"
+          }
+        },
+        {
+          "dex": "kujira",
+          "pool_type": "ConstantProduct",
+          "assets": [
+            "cosmoshub>atom",
+            "kujira>kuji"
+          ]
+        }
+      ],
+      [
+        {
+          "separate_addresses": {
+            "swap": "kujira1kmdrksdk6m892vkdvzmd6h0zrneydpmjsjz82x7tv385zdxmxyrsrc77h4",
+            "liquidity": "kujira129kyevjnwq3y33c3duvgsls94yp795upfe5va9tp0qstsyhcgz5qwsrndp"
+          }
+        },
+        {
+          "dex": "kujira",
+          "pool_type": "ConstantProduct",
+          "assets": [
+            "cosmoshub>atom",
+            "kujira>usk"
+          ]
+        }
+      ],
+      [
+        {
+          "separate_addresses": {
+            "swap": "kujira165pw3kaqxj4rhr7y8jjka2n3wllvf9hlc2u6555mt0neulfp8zeqrd8awc",
+            "liquidity": "kujira1s9hywlvtl3smu4ladtq75lkgecq6v6u4vml8wmj6k6jt0zhwwe7q957rcl"
+          }
+        },
+        {
+          "dex": "kujira",
+          "pool_type": "ConstantProduct",
+          "assets": [
+            "kujira>kuji",
+            "kujira>uatom"
+          ]
+        }
+      ],
+      [
+        {
+          "separate_addresses": {
+            "swap": "kujira1la5758xh6etg4lnzy2lh66v44cz5ahf09cywqap2nqn660ctcsdqp270fj",
+            "liquidity": "kujira17fu4hlhpdtux77zxv6qaaw33dr0wa0gtzm5wtzpg89r32ef7wy8sy0ycv6"
+          }
+        },
+        {
+          "dex": "kujira",
+          "pool_type": "ConstantProduct",
+          "assets": [
+            "kujira>uatom",
+            "kujira>usk"
+          ]
+        }
+      ],
+      [
+        {
+          "separate_addresses": {
+            "swap": "kujira1hans838n2jlptwur5euph6fge2s7medudhasdamev5nxq6042llsvjur8s",
+            "liquidity": "kujira1qqw5yy7m93mm5x7aypuljyn8kjqdwcx66lpsahkr8emkmn7qdqjqptjnnk"
+          }
+        },
+        {
+          "dex": "kujira",
+          "pool_type": "ConstantProduct",
+          "assets": [
+            "kujira>uhrqn",
+            "kujira>usk"
+          ]
+        }
+      ],
+      [
+        {
+          "separate_addresses": {
+            "swap": "kujira1hqjp4630g3x04qraly69v74jlfhxv7c3ax0u4087qhzpzwzey3vqqr36q6",
+            "liquidity": "kujira1xdlm7q97cprpn5j4c70hlxgkzjk90nvhh2leh0f0gdksjt93gxzqq6kega"
+          }
+        },
+        {
+          "dex": "kujira",
+          "pool_type": "ConstantProduct",
+          "assets": [
+            "kujira>usend",
+            "kujira>usk"
+          ]
+        }
+      ],
+      [
+        {
+          "separate_addresses": {
+            "swap": "kujira1wdj0t6wwx2nsfxwnmpm248y2pvwmnfvel5sjtc8ta3pv659tqz8qyxhngg",
+            "liquidity": "kujira1msf6hs8kgmg0ac9upnkac89ygexfy0c688ac6j82p20w224kgefq548kmm"
+          }
+        },
+        {
+          "dex": "kujira",
+          "pool_type": "ConstantProduct",
+          "assets": [
+            "kujira>usk",
+            "kujira>uwenmoon"
+          ]
+        }
+      ],
+      [
+        {
+          "separate_addresses": {
+            "swap": "kujira1lkl9x2v8xazymej4p0mvp9rkyvjqz7myme2jmd9nw8s6aj9hhf6qnzzmdp",
+            "liquidity": "kujira1lx7ctvyglshlh2gvc6pqd4a80mf044n0s68lctrkq50vn6wjrmyqchjsck"
+          }
+        },
+        {
+          "dex": "kujira",
+          "pool_type": "ConstantProduct",
+          "assets": [
+            "kujira>usk",
+            "kujira>uwagmi"
+          ]
+        }
+      ],
+      [
+        {
+          "separate_addresses": {
+            "swap": "kujira1atpz6uzucseykc75e3fm8sfl7tzpfv76qru7dr863n6zmmgu4edselr92s",
+            "liquidity": "kujira16g9qysgrlhn8x0u09r3t7azpv8dap86a9cxr98tfl4rd9trthqxsh42ncy"
+          }
+        },
+        {
+          "dex": "kujira",
+          "pool_type": "ConstantProduct",
+          "assets": [
+            "kujira>usend",
+            "kujira>usk"
+          ]
+        }
       ]
     ]
   },

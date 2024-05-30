@@ -8,15 +8,267 @@
         }
       ],
       [
+        "kujira>usk",
+        {
+          "native": "factory/kujira1r85reqy6h0lu02vyz0hnzhv5whsns55gdt4w0d7ft87utzk7u0wqr4ssll/uusk"
+        }
+      ],
+      [
+        "kujira>hans",
+        {
+          "native": "factory/kujira1mc8r0mcrye0tcwldn82fyyaa4zv6vve9j2me6h/uhans"
+        }
+      ],
+      [
         "kujira>demo",
         {
           "native": "factory/kujira1ltvwg69sw3c5z99c6rr08hal7v0kdzfxz07yj5/demo"
         }
       ],
       [
-        "kujira/kujira>kuji,kujira>demo",
+        "kujira>usned4",
+        {
+          "native": "factory/kujira13l9sjf2z3g8w9rkxgmfedv9qtel8ke8aaygrgl433uggmtkdhmmsjt5qjg/usned4"
+        }
+      ],
+      [
+        "kujira>usned",
+        {
+          "native": "factory/kujira13l9sjf2z3g8w9rkxgmfedv9qtel8ke8aaygrgl433uggmtkdhmmsjt5qjg/usned"
+        }
+      ],
+      [
+        "axelar>wftm",
+        {
+          "native": "ibc/C2BA0743260DDCD9B2E5464860584E2F0826E7C021E19B16A9F5CEF29D225CD3"
+        }
+      ],
+      [
+        "kujira>uusk",
+        {
+          "native": "factory/kujira1mue2v9nfpnh5x079zadhcaryv84wc86zqldksd/uusk"
+        }
+      ],
+      [
+        "kujira>uaqrn",
+        {
+          "native": "factory/kujira13l9sjf2z3g8w9rkxgmfedv9qtel8ke8aaygrgl433uggmtkdhmmsjt5qjg/uaqrn"
+        }
+      ],
+      [
+        "kujira>ucrqn",
+        {
+          "native": "factory/kujira13l9sjf2z3g8w9rkxgmfedv9qtel8ke8aaygrgl433uggmtkdhmmsjt5qjg/ucrqn"
+        }
+      ],
+      [
+        "kujira>udrqn",
+        {
+          "native": "factory/kujira13l9sjf2z3g8w9rkxgmfedv9qtel8ke8aaygrgl433uggmtkdhmmsjt5qjg/udrqn"
+        }
+      ],
+      [
+        "kujira>uerqn",
+        {
+          "native": "factory/kujira13l9sjf2z3g8w9rkxgmfedv9qtel8ke8aaygrgl433uggmtkdhmmsjt5qjg/uerqn"
+        }
+      ],
+      [
+        "kujira>ufqrn",
+        {
+          "native": "factory/kujira13l9sjf2z3g8w9rkxgmfedv9qtel8ke8aaygrgl433uggmtkdhmmsjt5qjg/ufqrn"
+        }
+      ],
+      [
+        "kujira>ugrqn",
+        {
+          "native": "factory/kujira13l9sjf2z3g8w9rkxgmfedv9qtel8ke8aaygrgl433uggmtkdhmmsjt5qjg/ugrqn"
+        }
+      ],
+      [
+        "kujira>uhrqn",
+        {
+          "native": "factory/kujira13l9sjf2z3g8w9rkxgmfedv9qtel8ke8aaygrgl433uggmtkdhmmsjt5qjg/uhrqn"
+        }
+      ],
+      [
+        "kujira>ufore",
+        {
+          "native": "factory/kujira13l9sjf2z3g8w9rkxgmfedv9qtel8ke8aaygrgl433uggmtkdhmmsjt5qjg/ufore"
+        }
+      ],
+      [
+        "kujira>uskin",
+        {
+          "native": "factory/kujira13l9sjf2z3g8w9rkxgmfedv9qtel8ke8aaygrgl433uggmtkdhmmsjt5qjg/uskin"
+        }
+      ],
+      [
+        "cosmoshub>atom",
+        {
+          "native": "ibc/C82173695F4C472A6F4EBF7369DFA69852A710834C24CEB7DF4DC90132B178E6"
+        }
+      ],
+      [
+        "kujira>uatom",
+        {
+          "native": "factory/kujira1ryx837fck4xytszw8jt5y3ja5qpx4pl2rzyzy3/uatom"
+        }
+      ],
+      [
+        "kujira>usend",
+        {
+          "native": "factory/kujira13l9sjf2z3g8w9rkxgmfedv9qtel8ke8aaygrgl433uggmtkdhmmsjt5qjg/usend"
+        }
+      ],
+      [
+        "kujira>uwenmoon",
+        {
+          "native": "factory/kujira13l9sjf2z3g8w9rkxgmfedv9qtel8ke8aaygrgl433uggmtkdhmmsjt5qjg/uwenmoon"
+        }
+      ],
+      [
+        "kujira>uwagmi",
+        {
+          "native": "factory/kujira13l9sjf2z3g8w9rkxgmfedv9qtel8ke8aaygrgl433uggmtkdhmmsjt5qjg/uwagmi"
+        }
+      ],
+      [
+        "kujira/kujira>demo,kujira>kuji",
         {
           "native": "factory/kujira19kxd9sqk09zlzqfykk7tzyf70hl009hkekufq8q0ud90ejtqvvxs8xg5cq/ulp"
+        }
+      ],
+      [
+        "kujira/kujira>hans,kujira>usk",
+        {
+          "native": "factory/kujira15jfkm638zw3qlfmv5ekc7e0flp2fqsr7xyjjl990cx5xwqczl2psc5xp8x/ulp"
+        }
+      ],
+      [
+        "kujira/kujira>kuji,kujira>usk",
+        {
+          "native": "factory/kujira16ethwy4fkjn7ymd04ect2wwlq7pwtlxdzw3zg5nvw8smmwsks49sqjg326/ulp"
+        }
+      ],
+      [
+        "kujira/kujira>demo,kujira>usk",
+        {
+          "native": "factory/kujira1a9fha3f02xyzvmanxxl4p3djrnp40ewwkrfkm4gr0exlv028ze3slhv4fn/ulp"
+        }
+      ],
+      [
+        "kujira/kujira>usk,kujira>usned4",
+        {
+          "native": "factory/kujira1j6fhnckujkjagg38zg04suvlzhplut87hnw0lytkf2vphh9pfcpsvwedza/ulp"
+        }
+      ],
+      [
+        "kujira/kujira>usk,kujira>usned",
+        {
+          "native": "factory/kujira128z4xqd0wug00w8sltp85yl2hyqdez8tqnrez233unl42axkkmts2r6ucn/ulp"
+        }
+      ],
+      [
+        "kujira/axelar>wftm,kujira>uusk",
+        {
+          "native": "factory/kujira1vq5uz5d74jcazksm7f92n9fs6vl5cjakf2u93uyrpk6t2rrsqrasa9ksq9/ulp"
+        }
+      ],
+      [
+        "kujira/kujira>uaqrn,kujira>usk",
+        {
+          "native": "factory/kujira1220g9jpstjxfp3ld0wcj7c4ljq8r2t3j9fteuk3290u60f6878ns8sxq9g/ulp"
+        }
+      ],
+      [
+        "kujira/kujira>ucrqn,kujira>usk",
+        {
+          "native": "factory/kujira1ve45zryy900n85hnyrp2908c3sn2fa53js2fjsy8m4spdtrvmztqdch96e/ulp"
+        }
+      ],
+      [
+        "kujira/kujira>udrqn,kujira>usk",
+        {
+          "native": "factory/kujira1c3nvccjdxy6vttg0ehpc5dr5fu2zq6932ea36lm9wfyhnzm3uyhqyztqv5/ulp"
+        }
+      ],
+      [
+        "kujira/kujira>uerqn,kujira>usk",
+        {
+          "native": "factory/kujira1mdksf4lescc5w9mwr6d7s2lypwys92pjhnscfwrmnyl35sctquds4z4vuf/ulp"
+        }
+      ],
+      [
+        "kujira/kujira>ufqrn,kujira>usk",
+        {
+          "native": "factory/kujira1hg4zgpe22xwk08tzl8pqg5d0syktxlw53v83qeht7f2kmxrmsx3sevyzey/ulp"
+        }
+      ],
+      [
+        "kujira/kujira>ugrqn,kujira>usk",
+        {
+          "native": "factory/kujira1pflr58tlf22erz2qza08qy9lp2wzm2q725rw9ervy50el2rj96tqv700zj/ulp"
+        }
+      ],
+      [
+        "kujira/kujira>uhrqn,kujira>usk",
+        {
+          "native": "factory/kujira10c82wlmf3svtzwdlxj55zz6rpr5599vveegfczhejug7yezdufssp06tcv/ulp"
+        }
+      ],
+      [
+        "kujira/kujira>ufore,kujira>usk",
+        {
+          "native": "factory/kujira1mj8e696gqf4udd85uffd95ct2vxur20kvfc9qxf0xx8n3532mm7qc0hp8g/ulp"
+        }
+      ],
+      [
+        "kujira/kujira>usk,kujira>uskin",
+        {
+          "native": "factory/kujira1n4xh80058pdhlmq9ylka2uz9eawdwzcg283828vt9y23sj5fjeksndqp5v/ulp"
+        }
+      ],
+      [
+        "kujira/cosmoshub>atom,kujira>kuji",
+        {
+          "native": "factory/kujira17pydeklj9h9tsauhwnhzkl5vcvr6v0mceqwg6njx5skg53efudsqfwk46e/ulp"
+        }
+      ],
+      [
+        "kujira/cosmoshub>atom,kujira>usk",
+        {
+          "native": "factory/kujira129kyevjnwq3y33c3duvgsls94yp795upfe5va9tp0qstsyhcgz5qwsrndp/ulp"
+        }
+      ],
+      [
+        "kujira/kujira>kuji,kujira>uatom",
+        {
+          "native": "factory/kujira1s9hywlvtl3smu4ladtq75lkgecq6v6u4vml8wmj6k6jt0zhwwe7q957rcl/ulp"
+        }
+      ],
+      [
+        "kujira/kujira>uatom,kujira>usk",
+        {
+          "native": "factory/kujira17fu4hlhpdtux77zxv6qaaw33dr0wa0gtzm5wtzpg89r32ef7wy8sy0ycv6/ulp"
+        }
+      ],
+      [
+        "kujira/kujira>usend,kujira>usk",
+        {
+          "native": "factory/kujira1xdlm7q97cprpn5j4c70hlxgkzjk90nvhh2leh0f0gdksjt93gxzqq6kega/ulp"
+        }
+      ],
+      [
+        "kujira/kujira>usk,kujira>uwenmoon",
+        {
+          "native": "factory/kujira1msf6hs8kgmg0ac9upnkac89ygexfy0c688ac6j82p20w224kgefq548kmm/ulp"
+        }
+      ],
+      [
+        "kujira/kujira>usk,kujira>uwagmi",
+        {
+          "native": "factory/kujira1lx7ctvyglshlh2gvc6pqd4a80mf044n0s68lctrkq50vn6wjrmyqchjsck/ulp"
         }
       ]
     ]
