@@ -31,6 +31,7 @@ export const RPC_OVERRIDES = {
   'neutron-1': 'https://neutron-rpc.polkachu.com/',
   'atlantic-2': 'https://sei-testnet-rpc.polkachu.com/',
   'osmosis-1': 'https://osmosis-rpc.reece.sh/',
+  'constantine-3': 'https://rpc.constantine.archway.io/',
 }
 
 interface INetwork {

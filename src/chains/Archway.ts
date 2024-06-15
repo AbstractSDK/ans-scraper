@@ -65,23 +65,23 @@ const constantine_3 = new Constantine3(
         },
       ],
       [
-        "archway>xconst",
+        'archway>xconst',
         {
-          "cw20": "archway1sdzaas0068n42xk8ndm6959gpu6n09tajmeuq7vak8t9qt5jrp6sjjtnka"
-        }
+          cw20: 'archway1sdzaas0068n42xk8ndm6959gpu6n09tajmeuq7vak8t9qt5jrp6sjjtnka',
+        },
       ],
       [
-        "archway>usdc",
+        'archway>usdc',
         {
-          "cw20": "archway1mmu32f7hn0fyw8gh57xl5uhaqu4pq5xx59ynf0tju60n2nzha0as3vtmcm"
-        }
+          cw20: 'archway1mmu32f7hn0fyw8gh57xl5uhaqu4pq5xx59ynf0tju60n2nzha0as3vtmcm',
+        },
       ],
       [
-        "astrovault/archway>usdc,archway>xconst",
+        'astrovault/archway>usdc,archway>xconst',
         {
-          "cw20": "archway1st6764z62hxxvausxlj0fd2rmq06f9dekhnzdajlc45c2fxpfk5sdllcqu"
-        }
-      ]
+          cw20: 'archway1st6764z62hxxvausxlj0fd2rmq06f9dekhnzdajlc45c2fxpfk5sdllcqu',
+        },
+      ],
     ]),
   }),
   new ContractRegistry({
@@ -92,57 +92,46 @@ const constantine_3 = new Constantine3(
         'registry',
         'archway1lr8rstt40s697hqpedv2nvt27f4cuccqwvly9gnvuszxmcevrlns60xw4r'
       ),
-      AnsContractEntry.fromEntry(
-        [
-          {
-            "protocol": "astrovault",
-            "contract": "staking/astrovault/archway>const,archway>xconst"
-          },
-          "archway14mwujg8f3qleemetthz4ndphr82q2r2gt2hul6qgaerxn4dnlnuqgsm82e"
-        ]
-      ),
-      AnsContractEntry.fromEntry(
-        [
-          {
-            "protocol": "astrovault",
-            "contract": "staking/astrovault/archway>usdc,archway>xconst"
-          },
-          "archway1gyucz0m7qgl450n7hmj24ckthdt2sap5phk0zyrwcj8hjprv9vss4nn8kw"
-        ])
+      AnsContractEntry.fromEntry([
+        {
+          protocol: 'astrovault',
+          contract: 'staking/astrovault/archway>const,archway>xconst',
+        },
+        'archway14mwujg8f3qleemetthz4ndphr82q2r2gt2hul6qgaerxn4dnlnuqgsm82e',
+      ]),
+      AnsContractEntry.fromEntry([
+        {
+          protocol: 'astrovault',
+          contract: 'staking/astrovault/archway>usdc,archway>xconst',
+        },
+        'archway1gyucz0m7qgl450n7hmj24ckthdt2sap5phk0zyrwcj8hjprv9vss4nn8kw',
+      ]),
     ],
   }),
-  new PoolRegistry(
-    {
-      contractRegistry: [
-        new AnsPoolEntry(
-          {
-            "contract": "archway1flsdgve559shl8fvqfrk3p2wdxn82ykqyqk7w2wjaw7p3gnhj3esfmq8t0"
-          },
-          {
-            "dex": "astrovault",
-            "pool_type": "Stable",
-            "assets": [
-              "archway>const",
-              "archway>xconst"
-            ]
-          }
-        ),
-        new AnsPoolEntry(
-          {
-            "contract": "archway1jdrvvzd2tcfvhvyaedy7e8s92lh2m3a3jklvn74768fh6n5quh4sl6rgkx"
-          },
-          {
-            "dex": "astrovault",
-            "pool_type": "ConstantProduct",
-            "assets": [
-              "archway>usdc",
-              "archway>xconst"
-            ]
-          }
-        )
-      ]
-    }
-  )
+  new PoolRegistry({
+    contractRegistry: [
+      new AnsPoolEntry(
+        {
+          contract: 'archway1flsdgve559shl8fvqfrk3p2wdxn82ykqyqk7w2wjaw7p3gnhj3esfmq8t0',
+        },
+        {
+          dex: 'astrovault',
+          pool_type: 'Stable',
+          assets: ['archway>const', 'archway>xconst'],
+        }
+      ),
+      new AnsPoolEntry(
+        {
+          contract: 'archway1jdrvvzd2tcfvhvyaedy7e8s92lh2m3a3jklvn74768fh6n5quh4sl6rgkx',
+        },
+        {
+          dex: 'astrovault',
+          pool_type: 'ConstantProduct',
+          assets: ['archway>usdc', 'archway>xconst'],
+        }
+      ),
+    ],
+  })
 )
 
 export class Archway extends Chain {

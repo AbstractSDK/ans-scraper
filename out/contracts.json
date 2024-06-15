@@ -1302,6 +1302,69 @@
           "contract": "staking/astrovault/archway>usdc,archway>xconst"
         },
         "archway1gyucz0m7qgl450n7hmj24ckthdt2sap5phk0zyrwcj8hjprv9vss4nn8kw"
+      ],
+      [
+        {
+          "protocol": "astrovault",
+          "contract": "staking/astrovault/archway>axv,archway>xconst"
+        },
+        "archway1krlhm96svv33teh2t9v80skqrd3lean3ast98uzwhm0z43un9pesnn4p2n"
+      ],
+      [
+        {
+          "protocol": "astrovault",
+          "contract": "staking/astrovault/archway>axv,archway>usdc"
+        },
+        "archway1l4tpulxv2jz5pv33epl32x06ewu93qefcucjlt3snw4acz0ejrwsj2n906"
+      ],
+      [
+        {
+          "protocol": "astrovault",
+          "contract": "staking/astrovault/archway>xconst,axelar>ausdc"
+        },
+        "archway188mqcwsfnh0tvxnchjcs48d0el4xclt2quf09cz786v4p4jdtg0qf0xrp7"
+      ],
+      [
+        {
+          "protocol": "astrovault",
+          "contract": "staking/astrovault/archway>xatom,archway>xconst"
+        },
+        "archway178dl7qhut4hr2qjacqv85tlkzg9lgwh66l5zr68y9lg82hzfwghs2ja0ns"
+      ],
+      [
+        {
+          "protocol": "astrovault",
+          "contract": "staking/astrovault/archway>xaxl,archway>xconst"
+        },
+        "archway1y2s056egkwgnghwv78ta0ep45sgrr5np4mzke7k52x0l5vwyjp8s4wrlzv"
+      ],
+      [
+        {
+          "protocol": "astrovault",
+          "contract": "staking/astrovault/archway>ethaxv,archway>usdc"
+        },
+        "archway1yypks4xew3fmw050azljycnlqkma4tdqkmvkthk4ydc98v4eukhs4wzws5"
+      ],
+      [
+        {
+          "protocol": "astrovault",
+          "contract": "staking/astrovault/archway>busdaxv,archway>usdc,archway>usdtaxv"
+        },
+        "archway1wq754xyvl7fkcm3pp2f9s98qmsrerg7p4qgapefvw5hav08vkm9s5zrede"
+      ],
+      [
+        {
+          "protocol": "astrovault",
+          "contract": "staking/astrovault/archway>xatom,cosmoshub>atom"
+        },
+        "archway19w8y73cln7rlkkl43wmuqcywvu8xscvfdn4xquces7zqkj7j6p2qjh9nxd"
+      ],
+      [
+        {
+          "protocol": "astrovault",
+          "contract": "staking/astrovault/archway>xaxl,axelar>axl"
+        },
+        "archway1wxd0extxjn6eu0fxkhck354p0tvmu7h5z6kcpnvvg5q8pgcxts6qqftqkw"
       ]
     ],
     "archway-1": [
