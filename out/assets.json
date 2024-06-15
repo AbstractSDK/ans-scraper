@@ -2686,6 +2686,120 @@
         {
           "cw20": "archway1st6764z62hxxvausxlj0fd2rmq06f9dekhnzdajlc45c2fxpfk5sdllcqu"
         }
+      ],
+      [
+        "archway>axv",
+        {
+          "cw20": "archway1qrvfsfdyw79g8zxepkafrsj53xvz2v072mk6kqe3yj82n8ahznpssuzzc5"
+        }
+      ],
+      [
+        "axelar>ausdc",
+        {
+          "native": "ibc/F91EA2C0A23697A1048E08C2F787E3A58AC6F706A1CD2257A504925158CFC0F3"
+        }
+      ],
+      [
+        "archway>xatom",
+        {
+          "cw20": "archway1k805d8pajwhda56gvas4cepvkfcfk5fkw7cpcnx6xjtzmt43qjmq76enw0"
+        }
+      ],
+      [
+        "archway>xaxl",
+        {
+          "cw20": "archway1eecw6a8yd9mcxwt3gah0ttdhrg7u7l98dv40pc7fszlzfqrgxnmq0y2zyu"
+        }
+      ],
+      [
+        "archway>ethaxv",
+        {
+          "cw20": "archway1amxcch6d85t9062rps0x2qr8q799ucdfnthjy42zkndgegpdp89qlczwer"
+        }
+      ],
+      [
+        "archway>usdtaxv",
+        {
+          "cw20": "archway12defza8nz2d2a3hgt6tftku28ly5lglsna69j7rpjeukg4pz8qese2326s"
+        }
+      ],
+      [
+        "archway>busdaxv",
+        {
+          "cw20": "archway1lcxaem4gqnp2mdeh5hawacxlzge8e6wzjaat73ahpf2rclqv9v4sj8e4kf"
+        }
+      ],
+      [
+        "cosmoshub>atom",
+        {
+          "native": "ibc/25418646C017D377ADF3202FF1E43590D0DAE3346E594E8D78176A139A928F88"
+        }
+      ],
+      [
+        "axelar>axl",
+        {
+          "native": "ibc/85CE72EE820A66F0ABD5EE3907A34E243E4BE2D6CFAEB4C08DF85BD6C0784FA2"
+        }
+      ],
+      [
+        "astrovault/archway>axv,archway>xconst",
+        {
+          "cw20": "archway1phnf6673x384nhfu28ypy7hmrk6skfhasdzx5zkeyh0vxgfxewmsq7vadv"
+        }
+      ],
+      [
+        "astrovault/archway>axv,archway>usdc",
+        {
+          "cw20": "archway1qxtgkrgj7a4f5e4hlv4x59ushqkr8k0gfu39m7rvg5ryk2dzyxaq9h2pmk"
+        }
+      ],
+      [
+        "astrovault/archway>xconst,axelar>ausdc",
+        {
+          "cw20": "archway1a4lljhyycd50ecqqgezddkrns4eaftxf9rwwlnj8qnp7ga55mxjslyn4gk"
+        }
+      ],
+      [
+        "astrovault/archway>xatom,archway>xconst",
+        {
+          "cw20": "archway1s6s4a9m2qzynyphr0hnwf7h82nw0t6cquzhjgj7ej3uchp0hweeswtmmj7"
+        }
+      ],
+      [
+        "astrovault/archway>xaxl,archway>xconst",
+        {
+          "cw20": "archway13e7x7tf2y00c3kyheaurgr5ts9r0lwvhweg4zhvqprtcwyhs3jyq47c5q4"
+        }
+      ],
+      [
+        "astrovault/archway>ethaxv,archway>usdc",
+        {
+          "cw20": "archway1re4tn4h9vgqdm2hhagtck75ty526xua70q8awh0h62h7pu2a6dgqqq6q67"
+        }
+      ],
+      [
+        "astrovault/archway>busdaxv,archway>usdc,archway>usdtaxv",
+        {
+          "cw20": "archway1774ymydwzdr8q92duq32wxecuj7gx66ye2xh9ag2a58ghnzcwkes6w0ugw"
+        }
+      ],
+      [
+        "astrovault/archway>const,archway>xconst",
+        {
+          "cw20": "archway12nnddpjaf4vwpzq03zamaa7tmza3rjkpkcercv9wty2rlkwuqmxsqscffy"
+        }
+      ],
+      [
+        "astrovault/archway>xatom,cosmoshub>atom",
+        {
+          "cw20": "archway1q664fuen9hyagk4eetthgah80lnpq9yqz5nr53j5gp3mq8g5cqsqzhgqem"
+        }
+      ],
+      [
+        "astrovault/archway>xaxl,axelar>axl",
+        {
+          "cw20": "archway1gghwg0jcx08nmz64kktf68l862akdl0ukkmczet4h85hfa9s0c2slha3gh"
+        }
       ]
     ],
     "archway-1": [

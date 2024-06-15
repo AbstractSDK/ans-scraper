@@ -5,8 +5,8 @@ dependencies:
     specifier: 0.14.0
     version: 0.14.0(@cosmjs/amino@0.30.1)(@cosmjs/cosmwasm-stargate@0.30.1)(cosmwasm@1.1.1)
   '@chain-registry/types':
-    specifier: ^0.16.0
-    version: 0.16.0
+    specifier: ^0.44.10
+    version: 0.44.10
   '@cosmjs/amino':
     specifier: ^0.30.1
     version: 0.30.1
@@ -29,8 +29,8 @@ dependencies:
     specifier: ^2.0.0
     version: 2.0.0
   chain-registry:
-    specifier: ^1.19.0
-    version: 1.19.0
+    specifier: ^1.62.12
+    version: 1.62.12
   cmd-ts:
     specifier: ^0.11.0
     version: 0.11.0
@@ -496,10 +496,8 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
 
-  /@chain-registry/types@0.16.0:
-    resolution: {integrity: sha512-4j6vq2Vqn/nF+UBjvRPUVs6eM3+5rJ+dPmEWpd/OoNH3wTy1k6aoilcSTZRR//vGcI5EOVGsxhhJxUzo2qqweA==}
-    dependencies:
-      '@babel/runtime': 7.21.5
+  /@chain-registry/types@0.44.10:
+    resolution: {integrity: sha512-AjHJ4sWKYu9k/og7GLSTwFxZH9THLMxmtuSGP9ZwEizR/BAGb+EM16ogaLd64JrjvibjXQaItyhWzTAxw6YQ1g==}
     dev: false
 
   /@confio/ics23@0.6.8:
@@ -1948,11 +1946,10 @@ packages:
     resolution: {integrity: sha512-1MgUzEkoMO6gKfXflStpYgZDlFM7M/ck/bgfVCACO5vnAf0fXoNVHdWtqGU+MYca+4bL9Z5bpOVmR33cWW9G2A==}
     dev: true
 
-  /chain-registry@1.19.0:
-    resolution: {integrity: sha512-7Ax0cRurfS+I0Oru3Td8NqBY/2YRCv570XM555E5vu3ib3f/k5SELwxsSalTtQj+Furx6quEyKWuOjrNwPpcQg==}
+  /chain-registry@1.62.12:
+    resolution: {integrity: sha512-0vrEAmmvmyZtg7K3J8lHEWdw9jzea9eskJ3BOpGoN2fUOWjqUvoV2GzFY+dLAU3rr562wsFqQOCzTAQeFYnk4g==}
     dependencies:
-      '@babel/runtime': 7.21.5
-      '@chain-registry/types': 0.16.0
+      '@chain-registry/types': 0.44.10
     dev: false
 
   /chalk@2.4.2:
