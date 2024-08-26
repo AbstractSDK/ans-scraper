@@ -52,6 +52,12 @@ const archway_1 = new Archway1(
           native: 'ibc/3BEA25F3A13A9C17476C821CCF8ECCC84351DDB7B1B06B98654C3B4427F785CC'
         },
       ],
+      [
+        'neutron>ntrn',
+        {
+          native: 'ibc/9E3CDA65E02637E219B43802452D6B37D782F466CF76ECB9F47A2E00C07C4769'
+        },
+      ],
     ]),
   }),
   new ContractRegistry({
