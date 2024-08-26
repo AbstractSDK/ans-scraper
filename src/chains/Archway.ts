@@ -40,6 +40,18 @@ const archway_1 = new Archway1(
           cw20: 'archway135pmrdfsu8le852q5xztwdlxpmzqrp2t589lrqtw2athnr70wgcqg26ecc',
         },
       ],
+      [
+        'osmosis>osmo',
+        {
+          native: 'ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B'
+        },
+      ],
+      [
+        'juno>juno',
+        {
+          native: 'ibc/3BEA25F3A13A9C17476C821CCF8ECCC84351DDB7B1B06B98654C3B4427F785CC'
+        },
+      ],
     ]),
   }),
   new ContractRegistry({
